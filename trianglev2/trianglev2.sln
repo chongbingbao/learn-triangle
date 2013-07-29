@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "trianglev2", "trianglev2\trianglev2.vcxproj", "{80CE0BA6-D93A-4795-A4D1-8007CCF0FAAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80CE0BA6-D93A-4795-A4D1-8007CCF0FAAB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{80CE0BA6-D93A-4795-A4D1-8007CCF0FAAB}.Debug|Win32.Build.0 = Debug|Win32
+		{80CE0BA6-D93A-4795-A4D1-8007CCF0FAAB}.Release|Win32.ActiveCfg = Release|Win32
+		{80CE0BA6-D93A-4795-A4D1-8007CCF0FAAB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
