@@ -331,11 +331,52 @@ void TestPLSGWrapper()
 
 }
 
+void TestPLSGWrapperPntOnSeg()
+{
+	xtTriPnt2 plist[] = {
+		{-2,0},
+		{4,0},
+		{-1,2},
+		{0,1},
+		{0.5,2},
+		{0,4},
+	};
+
+	std::vector<xtTriPnt2> plistvec;
+	for ( int i=0; i<6; ++i ) {
+		plistvec.push_back(plist[i]);
+	}
+
+	xtSeg2WithMarker segs[] = {
+		{0,1,0},
+		//{1,4,0},
+		//{4,5,0},
+		{1,5,0},
+		//{2,5,0},
+		//{0,2,0},
+		{5,0,0},
+		{2,3,1},
+		{3,4,1},
+	};
+
+	std::vector<xtSeg2WithMarker> segsvec;
+	for ( int i=0; i<5; ++i ) {
+		segsvec.push_back(segs[i]);
+	}
+
+	std::vector<xtTriIndexO> outtrivec;
+
+	xtTrianglePLSG triPLSG(plistvec,segsvec,outtrivec);
+
+}
+
 int main()
 {
 
-	TestPLSGWrapper();
+	//TestPLSGWrapper();
 
-  return 0;
+	TestPLSGWrapperPntOnSeg();
+
+	return 0;
 }
 
